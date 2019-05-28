@@ -37,7 +37,13 @@ end
 
 
 
-def bulk_tweet_shortener
+def bulk_tweet_shortener(array)
+  
+  array.each do |item|
+    fuck = word_substituter(item)
+    puts fuck
+  end
+  
 end 
 
 
