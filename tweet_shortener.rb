@@ -62,7 +62,7 @@ end
 def shortened_tweet_truncator(string)
   fuck = word_substituter(string)
   if fuck.length > 140
-    fuck[0..140]
+    fuck[0..139]
   end
 end 
 
