@@ -59,7 +59,11 @@ end
 
 
 
-def shortened_tweet_truncator
+def shortened_tweet_truncator(string)
+  fuck = word_substituter(string)
+  if fuck.length > 140
+    
+  end
 end 
 
 
