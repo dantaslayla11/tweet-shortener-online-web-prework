@@ -27,8 +27,8 @@ def word_substituter(string)
    array = string.split(" ")
    array2 = []
    array.each do |item|
-     fuck = dictionary(item)
-     item = fuck
+     word = dictionary(item)
+     item = word
      array2.push(item)
     end
     array2.join(" ")
@@ -41,8 +41,8 @@ end
 def bulk_tweet_shortener(array)
   
   array.each do |item|
-    fuck = word_substituter(item)
-    puts fuck
+    word = word_substituter(item)
+    puts word
   end
   
 end 
@@ -50,9 +50,9 @@ end
 
 
 def selective_tweet_shortener(string)
-   cool = word_substituter(string)
+   word = word_substituter(string)
    if string.length > 140
-     return cool[0..140]
+     return word[0..140]
    end
    string
 end 
@@ -60,8 +60,8 @@ end
 
 
 def shortened_tweet_truncator(string)
-  fuck = word_substituter(string)
-  if fuck.length > 140
+  word = word_substituter(string)
+  if word.length > 140
     return fuck[0...140]
   end
   fuck
