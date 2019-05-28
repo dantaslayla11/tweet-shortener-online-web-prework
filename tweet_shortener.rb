@@ -12,7 +12,7 @@ def dictionary(item)
  "at" => "@",
  "and" => "&"}
  
- 
+ end
 
 def word_substituter(string)
    array = string.split(" ")
