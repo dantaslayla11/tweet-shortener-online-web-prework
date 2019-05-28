@@ -12,7 +12,15 @@ def dictionary(item)
  "at" => "@",
  "and" => "&"}
  
+ tweets.each do |k,v|
+    if (k==item)
+      return v
+    end  
  end
+ item
+end 
+
+ 
 
 def word_substituter(string)
    array = string.split(" ")
