@@ -56,6 +56,7 @@ def selective_tweet_shortener(string)
      return cool[0..140]
    end
    puts cool.length
+   puts cool
    cool
 end 
 
