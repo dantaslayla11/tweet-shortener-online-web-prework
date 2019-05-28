@@ -53,7 +53,7 @@ def selective_tweet_shortener(string)
    cool = word_substituter(string)
    
    if cool.length > 140
-     return cool[0..130]
+     return cool[0..140]
    end
    puts cool.length
    puts cool
